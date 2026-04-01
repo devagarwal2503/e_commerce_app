@@ -1,6 +1,7 @@
 import 'package:e_commerce_app/core/common/widgets/app_text_field.dart';
 import 'package:e_commerce_app/core/extensions/context_extension.dart';
 import 'package:e_commerce_app/core/common/views/main_dashboard_screen.dart';
+import 'package:e_commerce_app/src/authentication/presentation/views/sign_in_screen.dart';
 import 'package:flutter/material.dart';
 
 class SignUpForm extends StatefulWidget {
@@ -138,10 +139,7 @@ class _SignUpFormState extends State<SignUpForm> {
               ),
             ),
             onPressed: () {
-              Navigator.pushReplacementNamed(
-                context,
-                MainDashboardScreen.routeName,
-              );
+              Navigator.pushReplacementNamed(context, SignInScreen.routeName);
             },
             child: Text(
               context.localText.createAccountText,

@@ -50,6 +50,8 @@ dependencies:
   cached_network_image: ^3.4.1
   flutter_localization: ^0.3.3
   auto_size_text: ^3.0.0
+  local_auth: ^3.0.1
+  pinput: ^6.0.2
 
 dev_dependencies:
   flutter_test:
