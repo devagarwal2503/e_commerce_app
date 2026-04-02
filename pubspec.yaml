@@ -52,6 +52,7 @@ dependencies:
   auto_size_text: ^3.0.0
   local_auth: ^3.0.1
   pinput: ^6.0.2
+  supabase_flutter: ^2.12.2
 
 dev_dependencies:
   flutter_test:

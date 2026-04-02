@@ -3,9 +3,7 @@ import 'dart:async';
 import 'package:e_commerce_app/core/extensions/context_extension.dart';
 import 'package:e_commerce_app/core/resources/media_resources.dart';
 import 'package:e_commerce_app/core/services/injection_container.dart';
-import 'package:e_commerce_app/src/authentication/data/models/user_model.dart';
 import 'package:e_commerce_app/src/on_boarding/data/datasources/on_boarding_local_data_source.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -29,16 +27,18 @@ class _SplashScreenState extends State<SplashScreen> {
     Timer(const Duration(seconds: 5), () {
       if (sharedPreference.getBool(kFirstTimerKey) ?? true) {
         Navigator.pushReplacementNamed(context, '/on-boarding');
-      } else if (sl<FirebaseAuth>().currentUser != null) {
-        final user = sl<FirebaseAuth>().currentUser;
-        final localUser = LocalUserModel(
-          uid: user!.uid,
-          email: user.email ?? "",
-          fullName: user.displayName ?? "",
-        );
-        context.userProvider.initUser(localUser);
-        Navigator.pushReplacementNamed(context, '/main-screen', arguments: 0);
-      } else {
+      }
+      // else if (sl<FirebaseAuth>().currentUser != null) {
+      //   final user = sl<FirebaseAuth>().currentUser;
+      //   final localUser = LocalUserModel(
+      //     uid: user!.uid,
+      //     email: user.email ?? "",
+      //     fullName: user.displayName ?? "",
+      //   );
+      //   context.userProvider.initUser(localUser);
+      //   Navigator.pushReplacementNamed(context, '/main-screen', arguments: 0);
+      // }
+      else {
         Navigator.pushReplacementNamed(context, '/sign-in');
       }
     });

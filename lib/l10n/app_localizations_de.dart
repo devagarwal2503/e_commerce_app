@@ -250,4 +250,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get swipeAgainToExitText => 'Wischen Sie erneut, um den Vorgang zu beenden';
+
+  @override
+  String get enterYourNameText => 'Bitte geben Sie Ihren Namen ein';
 }

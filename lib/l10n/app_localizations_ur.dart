@@ -250,4 +250,7 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get swipeAgainToExitText => 'باہر نکلنے کے لیے دوبارہ سوائپ کریں۔';
+
+  @override
+  String get enterYourNameText => 'براہ کرم اپنا نام درج کریں۔';
 }

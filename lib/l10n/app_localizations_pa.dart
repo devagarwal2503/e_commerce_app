@@ -250,4 +250,7 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get swipeAgainToExitText => 'ਬਾਹਰ ਨਿਕਲਣ ਲਈ ਦੁਬਾਰਾ ਸਵਾਈਪ ਕਰੋ';
+
+  @override
+  String get enterYourNameText => 'ਕਿਰਪਾ ਕਰਕੇ ਆਪਣਾ ਨਾਮ ਦਰਜ ਕਰੋ';
 }

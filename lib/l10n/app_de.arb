@@ -80,5 +80,6 @@
   "ifOrderedWithinText": "Bei Bestellung innerhalb",
   "hourText": "Stunde",
   "languageChangedToText": "Sprache geändert zu",
-  "swipeAgainToExitText": "Wischen Sie erneut, um den Vorgang zu beenden"
+  "swipeAgainToExitText": "Wischen Sie erneut, um den Vorgang zu beenden",
+  "enterYourNameText": "Bitte geben Sie Ihren Namen ein"
 }

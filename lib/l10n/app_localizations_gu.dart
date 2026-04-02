@@ -250,4 +250,7 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get swipeAgainToExitText => 'બહાર નીકળવા માટે ફરીથી સ્વાઇપ કરો';
+
+  @override
+  String get enterYourNameText => 'કૃપા કરીને તમારું નામ દાખલ કરો';
 }

@@ -80,5 +80,6 @@
   "ifOrderedWithinText": "Si commandé dans",
   "hourText": "Heure",
   "languageChangedToText": "La langue a été modifiée en",
-  "swipeAgainToExitText": "Glissez à nouveau pour quitter"
+  "swipeAgainToExitText": "Glissez à nouveau pour quitter",
+  "enterYourNameText": "Veuillez entrer votre nom"
 }

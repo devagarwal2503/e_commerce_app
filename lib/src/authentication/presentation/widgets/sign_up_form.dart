@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 
 class SignUpForm extends StatefulWidget {
   const SignUpForm({
+    required this.nameController,
     required this.emailController,
     required this.passwordController,
     required this.confirmPasswordController,
@@ -13,6 +14,7 @@ class SignUpForm extends StatefulWidget {
     super.key,
   });
 
+  final TextEditingController nameController;
   final TextEditingController emailController;
   final TextEditingController passwordController;
   final TextEditingController confirmPasswordController;
@@ -33,6 +35,21 @@ class _SignUpFormState extends State<SignUpForm> {
       child: Column(
         children: [
           AppTextField(
+            controller: widget.nameController,
+            hintText: context.localText.enterYourNameText,
+            hintStyle: TextStyle(
+              color: context.appColors.formFillTextColor,
+              fontSize: 14,
+            ),
+            prefixIcon: Icon(
+              Icons.person,
+              color: context.appColors.formFillTextColor,
+            ),
+            fillColor: context.appColors.formFieldFillColor,
+            filled: true,
+          ),
+          SizedBox(height: context.height * 0.03),
+          AppTextField(
             controller: widget.emailController,
             hintText: context.localText.usernameOrEmailText,
             hintStyle: TextStyle(
@@ -40,7 +57,7 @@ class _SignUpFormState extends State<SignUpForm> {
               fontSize: 14,
             ),
             prefixIcon: Icon(
-              Icons.person,
+              Icons.mail,
               color: context.appColors.formFillTextColor,
             ),
             fillColor: context.appColors.formFieldFillColor,

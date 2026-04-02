@@ -250,4 +250,7 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get swipeAgainToExitText => 'बाहेर पडण्यासाठी पुन्हा स्वाइप करा';
+
+  @override
+  String get enterYourNameText => 'कृपया आपले नाव प्रविष्ट करा';
 }

@@ -80,5 +80,6 @@
   "ifOrderedWithinText": "यदि भीतर आदेश दिया जाए",
   "hourText": "घंटा",
   "languageChangedToText": "भाषा बदल गयी",
-  "swipeAgainToExitText": "बाहर निकलने के लिए फिर से स्वाइप करें"
+  "swipeAgainToExitText": "बाहर निकलने के लिए फिर से स्वाइप करें",
+  "enterYourNameText": "कृपया अपना नाम दर्ज करें"
 }

@@ -5,12 +5,17 @@ import 'package:e_commerce_app/core/services/injection_container.dart';
 import 'package:e_commerce_app/core/common/app/provider/local_provider.dart';
 import 'package:e_commerce_app/core/services/router.dart';
 import 'package:e_commerce_app/l10n/app_localizations.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Supabase.initialize(
+    anonKey:
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFvYmxhaHl2aGt3a2FvcnFybGN4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzUwMzEwNzEsImV4cCI6MjA5MDYwNzA3MX0.KCntLTKHcO0Ir9XmeZ5n6pOBnw914T5dsvBRVLgXeRs",
+    url: "https://aoblahyvhkwkaorqrlcx.supabase.co",
+  );
   // await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   await init();
   runApp(

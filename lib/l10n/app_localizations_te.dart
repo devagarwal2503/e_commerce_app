@@ -250,4 +250,7 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get swipeAgainToExitText => 'నిష్క్రమించడానికి మళ్లీ స్వైప్ చేయండి';
+
+  @override
+  String get enterYourNameText => 'దయచేసి మీ పేరును నమోదు చేయండి';
 }

@@ -80,5 +80,6 @@
   "ifOrderedWithinText": "Si se ordena dentro",
   "hourText": "Hora",
   "languageChangedToText": "Idioma cambiado a",
-  "swipeAgainToExitText": "Desliza nuevamente para salir"
+  "swipeAgainToExitText": "Desliza nuevamente para salir",
+  "enterYourNameText": "Por favor ingrese su nombre"
 }

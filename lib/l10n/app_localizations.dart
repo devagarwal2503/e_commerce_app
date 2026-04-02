@@ -596,6 +596,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Swipe again to exit'**
   String get swipeAgainToExitText;
+
+  /// No description provided for @enterYourNameText.
+  ///
+  /// In en, this message translates to:
+  /// **'Please Enter Your Name'**
+  String get enterYourNameText;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

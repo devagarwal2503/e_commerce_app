@@ -79,5 +79,6 @@
   "ifOrderedWithinText": "If ordered within",
   "hourText": "Hour",
   "languageChangedToText": "Language changed to",
-  "swipeAgainToExitText": "Swipe again to exit"
+  "swipeAgainToExitText": "Swipe again to exit",
+  "enterYourNameText": "Please Enter Your Name"
 }

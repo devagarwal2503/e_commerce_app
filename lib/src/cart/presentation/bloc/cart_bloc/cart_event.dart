@@ -11,17 +11,17 @@ class LoadCart extends CartEvent {}
 
 class AddItemEvent extends CartEvent {
   final CartItem item;
-  AddItemEvent(this.item);
+  const AddItemEvent(this.item);
 }
 
 class RemoveItemEvent extends CartEvent {
   final String productId;
-  RemoveItemEvent(this.productId);
+  const RemoveItemEvent(this.productId);
 }
 
 class DecrementItemEvent extends CartEvent {
   final String productId;
-  DecrementItemEvent(this.productId);
+  const DecrementItemEvent(this.productId);
 }
 
 class ClearCart extends CartEvent {
